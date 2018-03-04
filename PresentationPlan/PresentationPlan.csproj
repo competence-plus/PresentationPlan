@@ -32,6 +32,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GApp.Core">
+      <HintPath>..\packages\GApp\GApp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GApp.DAL.XML">
+      <HintPath>..\packages\GApp\GApp.DAL.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="GApp.Win.Core">
+      <HintPath>..\packages\GApp\GApp.Win.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GApp.Win.UI">
+      <HintPath>..\packages\GApp\GApp.Win.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSet UI">
+      <HintPath>..\packages\GApp\MetroSet UI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,8 +68,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GApp\Win\UI\Controls\GTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
