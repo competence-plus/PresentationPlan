@@ -161,5 +161,11 @@
   <ItemGroup>
     <None Include="Resources\ic_close_black_48dp_1x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_radio_button_checked_black_24dp_1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_radio_button_unchecked_black_24dp_1x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

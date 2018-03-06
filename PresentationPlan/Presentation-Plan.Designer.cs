@@ -42,10 +42,11 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton_Close = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_mask = new System.Windows.Forms.ToolStripButton();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.wpF_TextMessage = new WPF_Controls.WPF_TextMessage();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStripButton_Close = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +68,8 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.toolStripButton_Close});
+            this.toolStripButton_Close,
+            this.toolStripButton_mask});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -164,6 +166,28 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
+            // toolStripButton_Close
+            // 
+            this.toolStripButton_Close.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton_Close.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_Close.Image = global::PresentationPlan.Properties.Resources.ic_close_black_48dp_1x;
+            this.toolStripButton_Close.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_Close.Name = "toolStripButton_Close";
+            this.toolStripButton_Close.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton_Close.Text = "toolStripButton1";
+            this.toolStripButton_Close.Click += new System.EventHandler(this.toolStripButton_Close_Click);
+            // 
+            // toolStripButton_mask
+            // 
+            this.toolStripButton_mask.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton_mask.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_mask.Image = global::PresentationPlan.Properties.Resources.ic_radio_button_checked_black_24dp_1x;
+            this.toolStripButton_mask.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_mask.Name = "toolStripButton_mask";
+            this.toolStripButton_mask.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton_mask.Text = "toolStripButton1";
+            this.toolStripButton_mask.Click += new System.EventHandler(this.toolStripButton_mask_Click);
+            // 
             // elementHost1
             // 
             this.elementHost1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -175,17 +199,6 @@
             this.elementHost1.TabIndex = 2;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = this.wpF_TextMessage;
-            // 
-            // toolStripButton_Close
-            // 
-            this.toolStripButton_Close.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton_Close.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Close.Image = global::PresentationPlan.Properties.Resources.ic_close_black_48dp_1x;
-            this.toolStripButton_Close.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Close.Name = "toolStripButton_Close";
-            this.toolStripButton_Close.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_Close.Text = "toolStripButton1";
-            this.toolStripButton_Close.Click += new System.EventHandler(this.toolStripButton_Close_Click);
             // 
             // PresentationPlan
             // 
@@ -223,6 +236,7 @@
         private WPF_Controls.WPF_TextMessage wpF_TextMessage;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripButton toolStripButton_Close;
+        private System.Windows.Forms.ToolStripButton toolStripButton_mask;
     }
 }
 

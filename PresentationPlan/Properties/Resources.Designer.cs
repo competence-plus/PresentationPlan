@@ -69,5 +69,25 @@ namespace PresentationPlan.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_radio_button_checked_black_24dp_1x {
+            get {
+                object obj = ResourceManager.GetObject("ic_radio_button_checked_black_24dp_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_radio_button_unchecked_black_24dp_1x {
+            get {
+                object obj = ResourceManager.GetObject("ic_radio_button_unchecked_black_24dp_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
